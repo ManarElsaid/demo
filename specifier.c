@@ -12,6 +12,8 @@ int (*check_specifier(char *s))(va_list args)
 		{"c", print_char},
 		{"s", print_string},
 		{"%", print_percent},
+		{"d", print_int},
+		{"i", print_int},
 		{NULL, NULL}
 	};
 	int n = 0;
@@ -38,7 +40,7 @@ int get_print_function(char *s, va_list args)
 {
 	int (*f)(va_list) = check_specifier(s);
 
-	if(f)
+	if (f)
 		return (f(args));
 	return (0);
 }

@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
  * _putchar - writes a char to stdout
  * @c: the printed char
  * Return: 1 on success

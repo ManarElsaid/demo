@@ -8,7 +8,7 @@
 
 #define BUFFER_SIZE 1024
 #define BUFFER_FLUSH -1
-
+#define CONVERT_LOWERCASE 1
 
 #define NULL_STRING "(null)"
 
@@ -35,6 +35,11 @@ int print_char(va_list args);
 int print_string(va_list args);
 int print_percent(va_list args);
 int get_print_function(char *s, va_list args);
+int _strlen(char *s);
+int convert(long int num, int base);
+int print_int(va_list args);
+int print_number(char *str);
+int print_num(char *str);
 
 /* printf.c */
 
